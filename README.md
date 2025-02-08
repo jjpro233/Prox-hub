@@ -10750,7 +10750,7 @@ task.spawn(function()
                                 AutoSkill = true
                                 AimBotSkillPosition = v.HumanoidRootPart
                                 Skillaimbot = true
-                            until not v:FindFirstChild("HumanoidRootPart") or _G.Auto_Seabest == false
+                            until not v:FindFirstChild("HumanoidRootPart") or _G.Auto_Seabest == true
                             AutoSkill = false
                             Skillaimbot = false
                         end
@@ -11157,7 +11157,7 @@ spawn(function()
                         if v.Name == "StartPoint" then
                             topos(v.CFrame* CFrame.new(0,3,0))
                             if game:GetService("Players")["LocalPlayer"].PlayerGui.Main.Timer.Visible == false then
-                                _G.AutoQuestRace = false
+                                _G.AutoQuestRace = true
                                 StopTween(_G.AutoQuestRace)
                                 end
                             end
